@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VØID — Timepieces</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Geist+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">VØID</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#collection">Collection</a></li>
+      <li><a href="#specs">Specs</a></li>
+      <li><a href="#order">Order</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#order" class="btn-nav">Reserve</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-tag">Limited Edition · 2026</div>
+      <h1 class="hero-title">Time,<br><em>Redefined.</em></h1>
+      <p class="hero-sub">A watch that speaks through silence. Pure form, zero distraction.</p>
+      <div class="hero-actions">
+        <a href="#order" class="btn-primary">Reserve yours — €490</a>
+        <a href="#collection" class="btn-ghost">Discover</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="watch-container">
+        <div class="watch">
+          <div class="watch-face">
+            <div class="watch-center"></div>
+            <div class="hand hour" id="hourHand"></div>
+            <div class="hand minute" id="minuteHand"></div>
+            <div class="hand second" id="secondHand"></div>
+            <div class="marker m12"></div>
+            <div class="marker m3"></div>
+            <div class="marker m6"></div>
+            <div class="marker m9"></div>
+          </div>
+        </div>
+        <div class="watch-shadow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-grid">
+      <div class="about-text">
+        <div class="section-tag">Philosophy</div>
+        <h2>Less is<br><em>everything.</em></h2>
+        <p>VØID was born from a single question — what remains when you remove everything unnecessary? The answer is clarity. Pure, undistracted time.</p>
+        <p>Each piece is hand-assembled in Geneva, using only materials that earn their place on your wrist.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Components visible</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">42</div>
+          <div class="stat-label">mm case diameter</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">72</div>
+          <div class="stat-label">hour power reserve</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">∞</div>
+          <div class="stat-label">year warranty</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLLECTION -->
+  <section class="collection" id="collection">
+    <div class="section-header">
+      <div class="section-tag">Collection</div>
+      <h2>Three expressions<br>of <em>nothing.</em></h2>
+    </div>
+    <div class="carousel-wrap">
+  <button class="carousel-btn prev" onclick="changeSlide(-1)">←</button>
+  <div class="carousel-track" id="carouselTrack">
+
+    <div class="product-card">
+      <div class="product-watch">
+        <div class="mini-watch white-watch"></div>
+      </div>
+      <div class="product-info">
+        <div class="product-name">VØID 01 — Blanc</div>
+        <div class="product-desc">White dial · Silver case · Leather strap</div>
+        <div class="product-price">€490</div>
+      </div>
+    </div>
+
+    <div class="product-card featured">
+      <div class="product-badge">Best seller</div>
+      <div class="product-watch">
+        <div class="mini-watch black-watch"></div>
+      </div>
+      <div class="product-info">
+        <div class="product-name">VØID 02 — Noir</div>
+        <div class="product-desc">Black dial · Black case · Rubber strap</div>
+        <div class="product-price">€490</div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-watch">
+        <div class="mini-watch sand-watch"></div>
+      </div>
+      <div class="product-info">
+        <div class="product-name">VØID 03 — Sable</div>
+        <div class="product-desc">Sand dial · Gold case · Suede strap</div>
+        <div class="product-price">€490</div>
+      </div>
+    </div>
+
+  </div>
+  <button class="carousel-btn next" onclick="changeSlide(1)">→</button>
+</div>
+<div class="carousel-dots" id="carouselDots"></div>
+<br>
+  <!-- SPECS -->
+  <section class="specs" id="specs">
+    <div class="specs-inner">
+      <div class="section-tag">Specifications</div>
+      <h2>Built to<br><em>last.</em></h2>
+      <div class="specs-grid">
+        <div class="spec-item">
+          <div class="spec-label">Movement</div>
+          <div class="spec-value">Swiss Automatic ETA 2824</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Case</div>
+          <div class="spec-value">316L Stainless Steel</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Crystal</div>
+          <div class="spec-value">Sapphire, AR coated</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Water resistance</div>
+          <div class="spec-value">100m / 10 ATM</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Strap</div>
+          <div class="spec-value">Vegetable-tanned leather</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Diameter</div>
+          <div class="spec-value">42mm × 10.5mm</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORDER -->
+  <section class="order" id="order">
+    <div class="order-inner">
+      <div class="section-tag">Reserve</div>
+      <h2>Own the<br><em>silence.</em></h2>
+      <p class="order-sub">Limited to 500 pieces worldwide. Reserve yours today.</p>
+      <div class="order-form">
+        <input type="text" id="orderName" placeholder="Your name" />
+        <input type="email" id="orderEmail" placeholder="Your email" />
+        <select id="orderModel">
+          <option value="">Choose your model</option>
+          <option value="blanc">VØID 01 — Blanc · €490</option>
+          <option value="noir">VØID 02 — Noir · €490</option>
+          <option value="sable">VØID 03 — Sable · €490</option>
+        </select>
+        <button class="btn-primary" onclick="submitOrder()">Reserve now</button>
+      </div>
+      <div class="order-confirm" id="orderConfirm"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">VØID</div>
+    <div class="footer-sub">Timepieces · Geneva · Est. 2026</div>
+    <div class="footer-links">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Contact</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
