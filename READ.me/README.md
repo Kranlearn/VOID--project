@@ -1,7 +1,9 @@
 
 # VØID — Timepieces 🕐
 
-Une landing page haut de gamme pour une marque de montres fictive — construite en HTML, CSS et JavaScript pur. Design minimaliste, élégant et entièrement responsive.
+J'ai developpé VOID, une plateforme e-commerce vitrine dédiée à l'horlogerie de luxe.
+Ma priorité était l'immersion: j'ai intégré une horlogerie dynamique en JS pour renforcer le concept du temps.
+J'ai conçu un carrosel fluide pour la mise en avant des produits et un système de commande intéractif qui traite les données utilisateur sans rechargement de page (Single Page Logic), offrant ainsi une expérience fluide et haut de gamme.
 
 ---
 
